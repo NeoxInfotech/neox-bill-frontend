@@ -1,0 +1,41 @@
+.update-password {
+  position: absolute;
+  top: 15%;
+  width: 50%;
+  height: 40%;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px rgb(168, 168, 168);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  h2 {
+    font-size: 30px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    input,
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+    }
+    button {
+      color: #fff;
+      font-weight: 800;
+      background-color: #1f1e30;
+    }
+  }
+  .ico {
+    width: 100%;
+    text-align: start;
+  }
+}

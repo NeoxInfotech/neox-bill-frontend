@@ -1,0 +1,40 @@
+.report {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  .bug {
+    font-size: 40px;
+  }
+  .bug-box {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 7698px) {
+      width: 90%;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 15px;
+      outline: none;
+      border: none;
+      background-color: #ddd;
+      border-radius: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-weight: 800;
+      outline: none;
+      border: none;
+      background-color: #2d2c47;
+      color: #fff;
+      border-radius: 20px;
+    }
+  }
+}

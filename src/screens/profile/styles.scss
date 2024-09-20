@@ -1,0 +1,85 @@
+.profile {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .left,
+  .right {
+    width: 50%;
+    height: 100%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profile-pic {
+      height: 40%;
+      width: 40%;
+      border-radius: 50%;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    .profile-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 80%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        outline: none;
+        border: none;
+        background-color: #ddd;
+        border-radius: 20px;
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+      }
+      .profile-buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        button {
+          padding: 10px 30px;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          background-color: rgb(37, 126, 37);
+          color: #fff;
+          font-weight: 800;
+          border-radius: 15px;
+
+          &:nth-child(2) {
+            background-color: rgb(175, 37, 37);
+          }
+          &:nth-child(3) {
+            background-color: rgb(60, 110, 175);
+          }
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+        }
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

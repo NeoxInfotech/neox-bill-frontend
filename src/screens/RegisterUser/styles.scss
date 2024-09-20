@@ -1,0 +1,30 @@
+.register-user {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    input {
+      padding: 15px;
+      outline: none;
+      border: none;
+      background-color: #ddd;
+      border-radius: 20px;
+    }
+    button {
+      padding: 10px;
+      outline: none;
+      border: none;
+      background-color: #1f1e30;
+      color: #fff;
+      border-radius: 20px;
+      font-weight: 800;
+    }
+  }
+}

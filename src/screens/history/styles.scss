@@ -1,0 +1,26 @@
+.history {
+  .tablecontents {
+    width: 94%;
+    overflow-x: auto;
+    .search {
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      input {
+        padding: 10px;
+        outline: none;
+        border: none;
+        background-color: #ddd;
+        border-radius: 15px;
+      }
+      button {
+        padding: 0px 20px;
+        outline: none;
+        border: none;
+        background-color: #2d2c47;
+        color: #fff;
+        border-radius: 15px;
+      }
+    }
+  }
+}

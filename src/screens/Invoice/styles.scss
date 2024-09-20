@@ -1,0 +1,76 @@
+.doc {
+  width: 700px;
+  margin: auto;
+  min-height: 1000px;
+  position: relative;
+  padding: 20px;
+  background: url("../../assets/neox-logo-bg.png") no-repeat center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .doc-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .neox-img {
+      height: 90px;
+    }
+  }
+  .doc-addresses {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .inv-date {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 800;
+    align-items: start;
+  }
+  .inv-table {
+    .table-box {
+      width: 100%;
+      margin-bottom: 20px;
+      th {
+        font-size: 16px;
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
+      }
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        height: 30px;
+      }
+      td {
+        border-right: 1px solid #ddd;
+        font-size: 16px;
+        @media (max-width: 600px) {
+          font-size: 12px;
+        }
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+    .total {
+      margin-top: 30px;
+      padding: 15px 0px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      h4 {
+        text-align: end;
+      }
+    }
+  }
+  .bottom {
+    margin-top: 30px;
+  }
+  @page {
+    size: A4;
+  }
+}

@@ -1,0 +1,73 @@
+.home {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  .boxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    .card {
+      width: 21%;
+      min-height: 120px;
+      border-radius: 20px;
+      justify-content: center;
+      background: #e9e9e9;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      padding: 15px;
+      box-shadow: 1px 1px 8px #d4d4d4;
+      @media (max-width: 768px) {
+        width: 40%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+      .client-ico {
+        padding: 10px 10px;
+        border-radius: 50%;
+        background-color: #1f1e30;
+        font-size: 20px;
+        color: #fff;
+      }
+      .link {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+  .chart-head {
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .chart-bar {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 40vh;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .pie,
+    .line {
+      padding: 20px;
+      background-color: #ddd;
+      border-radius: 20px;
+      width: 45%;
+      max-height: 350px;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}
